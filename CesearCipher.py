@@ -18,11 +18,8 @@ def main():
 	text = input("input text: ").lower()
 	shift = int(input("input shift: "))
 	if shift == 0:
-		for i in range(1,101):
-			print(foo(text,i))
-		for j in range(-101):
-			print(foo(text,j))
-	print(foo(text,shift))
+		return text
+	return foo(text,shift)
 
 if __name__ == "__main__":
-	main()
+	print(main())
